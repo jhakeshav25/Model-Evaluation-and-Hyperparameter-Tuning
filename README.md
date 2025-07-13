@@ -82,12 +82,20 @@ Model-Evaluation-and-Hyperparameter-Tuning/
 ├── assets/
 │   └── banner.png
 ├── data/
+│   └── sample_data.csv
 ├── notebooks/
+│   ├── Model_Evaluation.ipynb
+│   ├── Hyperparameter_Tuning.ipynb
+│   └── Advanced_Techniques.ipynb
 ├── results/
+│   ├── final_metrics.csv
+│   └── metrics_plot.png
 ├── src/
+│   ├── evaluation.py
+│   ├── tuning.py
+│   ├── visualization.py
 │   └── main.py
-├── .github/
-│   └── workflows/
+├── .github/workflows
 │       └── main.yml
 ├── .gitignore
 ├── LICENSE
