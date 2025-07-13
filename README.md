@@ -4,7 +4,10 @@
 
 # 🚀 Model Evaluation & Hyperparameter Tuning Toolkit
 
+
 ![CI](https://github.com/jhakeshav25/Model-Evaluation-and-Hyperparameter-Tuning/actions/workflows/main.yml/badge.svg)
+![GitHub Repo stars](https://img.shields.io/github/stars/jhakeshav25/Model-Evaluation-and-Hyperparameter-Tuning?style=social)
+![License](https://img.shields.io/github/license/jhakeshav25/Model-Evaluation-and-Hyperparameter-Tuning)
 
 A modular and production-ready toolkit for evaluating machine learning models using accuracy, precision, recall, F1-score, and cross-validation. Includes advanced hyperparameter tuning (GridSearchCV, RandomizedSearchCV) and ensemble strategies (Voting, Stacking).
 
