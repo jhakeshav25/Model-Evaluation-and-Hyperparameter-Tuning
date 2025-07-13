@@ -4,54 +4,49 @@
 
 # 🚀 Model Evaluation & Hyperparameter Tuning Toolkit
 
-![CI](https://github.com/jhakeshav25/model-evaluation-hyperparameter-tuning/actions/workflows/main.yml/badge.svg)
+![CI](https://github.com/jhakeshav25/Model-Evaluation-and-Hyperparameter-Tuning/actions/workflows/main.yml/badge.svg)
 
-A comprehensive and modular toolkit for evaluating machine learning models and optimizing their performance using advanced hyperparameter tuning techniques and ensemble strategies.
+A modular and production-ready toolkit for evaluating machine learning models using accuracy, precision, recall, F1-score, and cross-validation. Includes advanced hyperparameter tuning (GridSearchCV, RandomizedSearchCV) and ensemble strategies (Voting, Stacking).
 
 ---
 
 ## ✨ Features
 
-✅ Evaluate multiple models using:
+✅ Evaluate models using:
 - Accuracy, Precision, Recall, F1-score
-- Cross-Validation (CV)
+- Cross-Validation
 
-✅ Optimize with:
-- `GridSearchCV` 🔍
-- `RandomizedSearchCV` 🎲
+✅ Tune parameters with:
+- GridSearchCV 🔍
+- RandomizedSearchCV 🎲
 
-✅ Advanced ML Techniques:
-- Ensemble models: VotingClassifier, StackingClassifier
-- Scalable design for real-world ML workflows
+✅ Ensemble methods:
+- VotingClassifier, StackingClassifier
 
-✅ Visual Insights:
-- Comparative bar chart of model metrics
+✅ Visual comparisons:
+- Bar plots of model performance
 
 ---
 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/jhakeshav25/model-evaluation-hyperparameter-tuning.git
-cd model-evaluation-hyperparameter-tuning
-
-# (Optional) Create virtual environment
+git clone https://github.com/jhakeshav25/Model-Evaluation-and-Hyperparameter-Tuning.git
+cd Model-Evaluation-and-Hyperparameter-Tuning
 python -m venv venv
 venv\Scripts\activate
-
-# Install dependencies
 pip install -r requirements.txt
 ```
 
 ---
 
-## ▶️ How to Use
+## ▶️ How to Run
 
 ```bash
 python src/main.py
 ```
 
-Or use the modular components in your own project:
+Or import functions into your own scripts:
 
 ```python
 from src.evaluation import evaluate_model
@@ -63,59 +58,61 @@ from src.visualization import plot_metrics
 
 ## 📚 Notebooks
 
-- 📘 `1. Model Evaluation.ipynb`  
-- 📘 `2. Hyperparameter Tuning.ipynb`  
-- 📘 `3. Advanced Techniques.ipynb`
+- `1. Model Evaluation.ipynb`
+- `2. Hyperparameter Tuning.ipynb`
+- `3. Advanced Techniques.ipynb`
 
 ---
 
-## 📊 Results Table
+## 📊 Metrics Comparison
 
-| Metric    | Description                     | Best Use Case                     |
-|-----------|---------------------------------|-----------------------------------|
-| Accuracy  | Overall model correctness       | When classes are balanced         |
-| Precision | Positive prediction quality     | When False Positives are costly   |
-| Recall    | Positive case coverage          | When False Negatives are costly   |
-| F1-score  | Balance between P & R           | When dealing with imbalanced data |
+| Metric    | Description                     | Best Use Case               |
+|-----------|---------------------------------|-----------------------------|
+| Accuracy  | Overall correctness             | When classes are balanced   |
+| Precision | Positive prediction quality     | When false positives matter |
+| Recall    | Coverage of true positives      | When false negatives matter |
+| F1-score  | Harmonic mean of precision/recall | Imbalanced datasets       |
 
 ---
 
-## 📁 Project Structure
+## 🗂 Project Structure
 
 ```
-model-evaluation-hyperparameter-tuning/
+Model-Evaluation-and-Hyperparameter-Tuning/
+├── assets/
+│   └── banner.png
 ├── data/
 ├── notebooks/
+├── results/
 ├── src/
 │   └── main.py
-├── results/
-│   ├── final_metrics.csv
-│   └── metrics_plot.png
-├── assets/
-│   └── banner.png                # Project banner
-├── requirements.txt
+├── .github/
+│   └── workflows/
+│       └── main.yml
+├── .gitignore
+├── LICENSE
 ├── README.md
-└── .gitignore
+├── requirements.txt
 ```
 
 ---
 
-## 🧑‍💻 Author
+## 👨‍💻 Author
 
 **Keshav Kumar Jha**  
 📧 [keshavkumarjha528@gmail.com](mailto:keshavkumarjha528@gmail.com)  
 📍 Greater Noida, India  
-🔗 [GitHub](https://github.com/jhakeshav25) • [LinkedIn](https://www.linkedin.com/in/keshav-kumar-jha-aa560022a/) • [LeetCode](https://leetcode.com/u/jhakeshav25/) • [GeeksforGeeks](https://www.geeksforgeeks.org/user/jhakeshav25/)
+🔗 [GitHub](https://github.com/jhakeshav25) • [LinkedIn](https://linkedin.com/in/keshav-kumar-jha-aa560022a/) • [LeetCode](https://leetcode.com/u/jhakeshav25/) • [GFG](https://www.geeksforgeeks.org/user/jhakeshav25/)
 
 ---
 
 ## 📜 License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) © 2025 [Keshav Kumar Jha](https://github.com/jhakeshav25)
+MIT License © 2025 [Keshav Kumar Jha](https://github.com/jhakeshav25)
 
 ---
 
-## 🙌 Contributing
+## 🤝 Contributing
 
-Pull requests are welcome!  
-Feel free to fork the repo and submit a PR to contribute new models, datasets, or enhancements.
+Contributions, improvements, and feature suggestions are welcome!  
+Please fork this repo and submit a pull request.
