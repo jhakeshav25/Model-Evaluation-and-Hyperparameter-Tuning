@@ -9,6 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
 import warnings
 warnings.filterwarnings("ignore")
+from visualization import plot_metrics
 
 def evaluate_model(model, X_test, y_test):
     y_pred = model.predict(X_test)
@@ -88,6 +89,7 @@ def main():
     print("\n📊 Final Evaluation Results:")
     df_results = pd.DataFrame(results)
     print(df_results.sort_values(by="accuracy", ascending=False))
+    plot_metrics(df_results)
 
 if __name__ == "__main__":
     main()
